@@ -1,0 +1,178 @@
+    1  wget www.github.com
+    2  $ git --version
+    3  wget www.github.com
+    4  git push ws1
+    5  git push cs131
+    6  git commit -m "Your message about the commit"
+    7  wget www.github.com
+    8  history > cmds.log
+    9  cmds.log ndex.html.3
+   10  wget www.github.com
+   11  git status
+   12  cd desktop
+   13  ls
+   14  cd index.html/1
+   15  cd index.html.1
+   16  cd index.index.html.3
+   17  history > cmds.log
+   18  ls
+   19  git status
+   20  git remote add https://github.com/ckuo1009/cs131.git
+   21  git init
+   22  wget www.github.com
+   23  history > cmds.log
+   24  git status
+   25  git add cmds.log
+   26  git status
+   27  git remote add origin https://github.com/ckuo1009/cs131.git
+   28  git push -u prigin master
+   29  git push -uorigin master
+   30  git push -u origin master
+   31  git commit
+   32  git status
+   33  git commit
+   34  git config --global user.name ckuo1009
+   35  git commit
+   36  git status
+   37  git commit
+   38  git log
+   39  git commit
+   40  git remote add origin https://github.com/ckuo1009/cs131.git
+   41  git remote
+   42  git push -u origin master
+   43  git remote add origin https://github.com/ckuo1009/cs131.git
+   44  git remote
+   45  git push origin master
+   46  ls
+   47  git init
+   48  git log
+   49  git status
+   50  git commit
+   51  git status
+   52  git  statsu
+   53  git status
+   54  git remote add origin https://github.com/ckuo1009/ddd.git
+   55  git push git push -u origin master
+   56  git statsu
+   57  git log
+   58  git commit -m "1233"
+   59  git log
+   60  git remote
+   61  git push -u origin
+   62  git push -u origin master
+   63  git remote add origin https://github.com/ckuo1009/cs131.git
+   64  git push -u origin main
+   65  git remote add origin https://github.com/ckuo1009/cs131.git
+   66  git push -u origin master
+   67  git push origin -u master 111
+   68  git status
+   69  wget www.github.com
+   70  history > cmds.log
+   71  git status
+   72  git push -u origin master
+   73  wget www.github.com
+   74  git remote add origin https://github.com/ckuo1009/cs131.git
+   75  history > cmds.log
+   76  git status
+   77  git commit
+   78  git push -u origin master
+   79  git add cmds.log
+   80  git status
+   81  git push -u origin master
+   82  git commit -m "cmds"
+   83  git status
+   84  git push -u origin master
+   85  wget www.github.com
+   86  git status
+   87  history > cmds.log
+   88  git status
+   89  git add cmds.log
+   90  git commit
+   91  git status
+   92  history > cmds.log
+   93  wget www.github.com
+   94  history > cmds.log
+   95  git status
+   96  git add cmds.log
+   97  git status
+   98  git push -u origin master
+   99  git remote
+  100  wget www.github.com
+  101  history > cmds.log
+  102  git add cmds.log
+  103  got commit
+  104  git commit
+  105  history > cmds.log
+  106  ls
+  107  git push origin master
+  108  git status
+  109  git remote add origin https://github.com/ckuo1009/cs131.git
+  110  git push origin master
+  111  git add index.html
+  112  git status
+  113  git clone https://github.com/ckuo1009/cs131.git
+  114  wget www.github.com
+  115  history > cmds.log
+  116  git add cmds.log
+  117  git commit -m "1"
+  118  git status
+  119  git push -u origin master
+  120  pwd
+  121  ls
+  122  cat cmds.log
+  123  passwd
+  124  ls
+  125  passwd
+  126  ls -lat
+  127  ls
+  128  ls -latr
+  129  ls -a
+  130  ls
+  131  rm index.html11
+  132  cd rm index.html.11
+  133  rm index.html.11
+  134  ls
+  135  cmds.log
+  136  cat cmds.log
+  137  head cmds.log
+  138  head -n cmds.log
+  139  nano
+  140  ls
+  141  rm cmds.log
+  142  rm index.html.1
+  143  rm index.html.3
+  144  rm index.html.2
+  145  rm index.html.10
+  146  rm index.html.4
+  147  rm index.html.5
+  148  rm index.html.7
+  149  rm index.html.8
+  150  rm index.html.9
+  151  ls
+  152  rm index.html
+  153  rm index.html.6
+  154  rm cs131
+  155  rm -rf cs131
+  156  ls
+  157  wget www.github.com
+  158  mkdir cs131
+  159  cd cs131
+  160  ls
+  161  mkdir ws1
+  162  cd ws1
+  163  history > cmds.log
+  164  ls
+  165  cd cs131
+  166  ls
+  167  rm index.html
+  168  rm -rf cs131
+  169  ls
+  170  wget www.github.com
+  171  mkdir cs131
+  172  ls
+  173  cd cs131
+  174  git init
+  175  git status
+  176  mkdir ws1
+  177  cd ws1
+  178  history > cmds.log

@@ -1,0 +1,15 @@
+  
+top3 cutomer
+reviews/customer ID 
+    21922/50122160
+     9964/50732546
+     2664/52615377
+
+top3 product
+ reviews/product ID
+    4625/043935806X
+    3739/0439139597
+    2666/0525947647
+    
+
+  

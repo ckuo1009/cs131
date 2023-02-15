@@ -1,0 +1,30 @@
+  660  cat ws3.txt
+  661  vi ws3.txt
+  662  rm ws3.txt
+  663  cut -f2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn > ws3.txt
+  664  ws3.txt
+  665  cat ws3.txt
+  666  vi ws3.txt
+  667  cut -f4 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn > ws3.txt
+  668  cat ws3.txt
+  669  vi ws3.txt
+  670  cut -f4 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn >> ws3.txt
+  671  vi ws3.txt
+  672  cat ws3.txt
+  673  history > cmds.log
+  674  ls
+  675  cat cmds.log
+  676  cd cs131
+  677  cd ws3
+  678  ls
+  679  cat cmds.log
+  680  ls
+  681  rm cmds.log
+  682  history | tail -n 18 > cmds.log
+  683  cat cmds.log
+  684  history | tail -n 18 > cmds.log
+  685  history | tail -n 20 > cmds.log
+  686  cat cmds.log
+  687  rm cmds.log
+  688  ls
+  689  history | tail -n 30 > cmds.log

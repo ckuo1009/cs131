@@ -1,0 +1,50 @@
+  914  ls
+  915  l
+  916  w
+  917  echo ~
+  918  id
+  919  mkdir temp
+  920  chmod u-x temp
+  921  cd temp
+  922  ls temp
+  923  ls -l temp
+  924  touch temp/123.txt
+  925  mkdir temp2
+  926  mv temp2 temp3/
+  927  cp -r temp2 temp5
+  928  cp -r temp3 temp 4
+  929  cp -r temp3 temp4/
+  930  ls /proc/ | grep mem
+  931  ls /proc/ | grep cpu
+  932  cat cpuinfo
+  933  head /proc/meminfo
+  934  head /proc/cpuinfo
+  935  tail /proc/cpuinfo
+  936  cat /proc/cpuinfo
+  937  cat /proc/cpuinfo | grep processor | wc -l
+  938  du -h /path/to/downloaded_hashtags_extend.csv
+  939  /home/test/a1/downloaded_hashtags_extend.csv
+  940  du -h /path/to/downloaded_hashtags_extend.csv
+  941  du -h /home/chih-kuo23sp/a1/downloaded_hashtags_extend.csv
+  942  /home/test/A1/downloaded_hashtags_extend.csv
+  943  du -h /home/test/A1/downloaded_hashtags_extend.csv
+  944  wc -l /home/test/A1/downloaded_hashtags_extend.csv
+  945  grep -i "great" /home/username/A1/downloaded_hashtags_extend.csv | wc -l
+  946  grep -i "great" /home/test/A1/downloaded_hashtags_extend.csv
+  947  grep -i "great" /home/test/A1/downloaded_hashtags_extend.csv | wc -l
+  948  file i /home/test/A1/downloaded_hashtags_extend.csv
+  949  iconv -f utf-8 -t ascii//TRANSLIT /home/test/A1/downloaded_hashtags_extend.csv
+  950  head -n 1 /home/test/A1/downloaded_hashtags_extend.csv
+  951  cut -d ',' /home/test/A1/downloaded_hashtags_extend.csv | sort -u | wc -l
+  952  cut -d ',' f1  /home/test/A1/downloaded_hashtags_extend.csv | sort -u | wc -l
+  953  cut -d ',' -f 1  /home/test/A1/downloaded_hashtags_extend.csv | sort -u | wc -l
+  954  cut -d ',' -f 4  /home/test/A1/downloaded_hashtags_extend.csv | sort -u | wc -l
+  955  cut -d ',' -f 2  /home/test/A1/downloaded_hashtags_extend.csv | sort -u | wc -l
+  956  ls
+  957  history > cmds.log
+  958  cat cmds.log
+  959  tail -n +914 cmds.log > cmds.log
+  960  cat cmds.log
+  961  history | tail -n 45 > cmds.log
+  962  cat cmds.log
+  963  history | tail -n 50 > cmds.log

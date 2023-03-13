@@ -1,0 +1,30 @@
+ 1054  ls
+ 1055  rm replied_to_counts_sorted.tsv
+ 1056  rm replied_to_tweets.tsv
+ 1057  rm replied_to_users.tsv
+ 1058  rm replied_to_counts.tsv 
+ 1059  ls
+ 1060  head -30  downloaded_tweets_extend_original_nolf2.tsv
+ 1061  clear
+ 1062  awk -F'\t' '{if ($6!="\\N") print $2,$6}' downloaded_tweets_extend_original_nolf2.tsv | sort | uniq -c | sort -nr | head -10
+ 1063  ls
+ 1064  script a2.txt
+ 1065  rm a2.txt
+ 1066  clear
+ 1067  ls
+ 1068  grep -oE '\<RetweetedTweet\ id=[0-9]+' downloaded_tweets_extend_nolf2.tsv | cut -d= -f2 > retweet_ids.txt
+ 1069  cat retweet_ids.txt
+ 1070  grep -E '\<RetweetedTweet\ id=[0-9]+' downloaded_tweets_extend_nolf2.tsv
+ 1071  grep -oE '\<RetweetedTweet\ id=[0-9]+' downloaded_tweets_extend_nolf2.tsv | cut -d= -f2 > retweet_ids.txt
+ 1072  fgrep -f retweet_ids.txt downloaded_tweets_extend_original_nolf2.tsv | grep -oE '\<id=[0-9]+' | cut -d= -f2 > retweeted_tweet_ids.txt
+ 1073  fgrep -f retweeted_tweet_ids.txt downloaded_tweets_extend_original_nolf2.tsv | grep -oE '\<author_id=[0-9]+' | cut -d= -f2 > retweeters.txt
+ 1074  sort retweeters.txt | uniq -c | sort -rn | head -n 10
+ 1075  cat retweeters.txt
+ 1076  grep -oE '\<RetweetedTweet\ id=[0-9]+' downloaded_tweets_extend_nolf2.tsv | cut -d= -f2 > retweet_ids.txt
+ 1077  grep -oE '\<ReferencedTweet\ id=[0-9]+' downloaded_tweets_extend_original_nolf2.tsv | cut -d= -f2 > retweet_ids.txt
+ 1078  grep -Fwf retweet_ids.txt downloaded_tweets_extend_nolf2.tsv | cut -f4 | sort | uniq -c | sort -nr | head -10
+ 1079  script a2.txt
+ 1080  history | tail -50 > cmds.log
+ 1081  ls
+ 1082  cat cmds.log
+ 1083  history | tail -30 > cmds.log

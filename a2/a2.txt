@@ -1,0 +1,79 @@
+Script started on 2023-03-13 00:48:46-04:00
+
+Q1)
+bash-4.4$ awk -F'\t' '{if ($6!="\\N") print $2,$6}' downloaded_tweets_extend_origginal_nolf2.tsv | sort | uniq -c | sort -nr | head -10
+    375 1891490382 
+    294 18831926 
+    274 163018653 
+    274 1495480590572961792 
+    254 1231514832479948802 
+    249 1219232377605644289 
+    228 18831926 18831926
+    174 42836999 
+    159 1229752606714728454 
+    155 813314931147816960 
+Q2)
+bash-4.4$ awk -F'\t' '{if ($6!="\\N") print $6}' downloaded_tweets_extend_originaal_nolf2.tsv | sort | uniq -c | sort -nr | head -10
+  38743 
+    238 18831926
+    107 380648579
+     83 16050065
+     46 3453306553
+     39 544732668
+     37 1094971056358637568
+     36 172323296
+     36 140496030
+     31 29447428
+
+Q3)
+bash-4.4$ grep -oE '\<RetweetedTweet\ id=[0-9]+' downloaded_tweets_extend_nolf2.ttsv | cut -d= -f2 > retweet_ids.txt
+bash-4.4$ grep -oE '\<RetweetedTweet\ id=[0-9]+' downloaded_tweets_extend_nolf2.ttsv | cut -d= -f2 > retweet_ids.txt
+bash-4.4$ grep -oE '\<ReferencedTweet\ id=[0-9]+' downloaded_tweets_extend_originnal_nolf2.tsv | cut -d= -f2 > retweet_ids.txt
+bash-4.4$ grep -Fwf retweet_ids.txt downloaded_tweets_extend_nolf2.tsv | cut -f4  | sort | uniq -c | sort -nr | head -10
+    812 
+    101 LongCovid
+     85 COVID19
+     56 BA2
+     50 Ukraine
+     31 "BA2,Omicron"
+     24 RepublicanTTTTTTPredators
+     24 Omicron
+     24 BREAKING
+     20 Russia
+
+
+Q4)
+bash-4.4$ grep -oE '#\w+' downloaded_tweets_extend_nolf2.tsv | sort | uniq -c | ssort -nr | head -30
+   2933 #Ukraine
+   1609 #COVID19
+   1123 #Russia
+   1112 #LongCovid
+    895 #FBPE
+    894 #FollowBackFriday
+    866 #StandWithUkraine
+    536 #PutinHitler
+    476 #Russian
+    407 #Putin
+    405 #Omicron
+    366 #BREAKING
+    363 #auspol
+    357 #Mariupol
+    343 #bcpoli
+    337 #Kyiv
+    319 #ableg
+    305 #StopPutinNOW
+    293 #COVIDisAirborne
+    282 #PMQs
+    274 #PutinWarCriminal
+    269 #Ottawa
+    263 #RussiaSanctions
+    263 #Genocide
+    260 #Ukrainian
+    260 #BoycottRussia
+    253 #VoteFordOut
+    239 #onpoli
+    239 #cdnpoli
+    229 #BA2
+bash-4.4$ exit
+
+Script done on 2023-03-13 00:51:14-04:00

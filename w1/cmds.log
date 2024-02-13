@@ -1,0 +1,32 @@
+    1  ls
+    2  mkdir 12
+    3  ls
+    4  cd ~/.ssh && ssh-keygen
+    5  mkdir ~/.ssh
+    6  cd ~/.ssh && ssh-keygen
+    7  cat ~/.ssh/id_rsa.pub
+    8  cd ..
+    9  cd ~
+   10  ls
+   11  mkdir cs131
+   12  ls
+   13  cd cs131
+   14  ls
+   15  clear
+   16  cd .
+   17  cd ..
+   18  git config --global user.email chih-kuo.hsu@sjsu.edu
+   19  git config --global user.name ckuo1009
+   20  cd cs131
+   21  git init
+   22  wget www.github.com
+   23  ls
+   24  cat index.html
+   25  rm index.html
+   26  ls
+   27  mkdir w1
+   28  cd w1
+   29  wget www.github.com
+   30  ls
+   31  rm index.html
+   32  history >cmds.log

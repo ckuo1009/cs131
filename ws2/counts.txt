@@ -1,0 +1,4 @@
+lines count: 245    
+words count: 853   
+
+character count: 47524

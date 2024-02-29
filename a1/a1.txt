@@ -1,0 +1,62 @@
+
+1. mkdir a1
+
+2. echo $SHELL
+
+2. echo $HOME
+
+3. uid=1220 ,groups=1220
+
+4. 
+[chih-kuosp24@sjsu a1]$ mkdir myDir
+[chih-kuosp24@sjsu a1]$ chmod u-w myDir
+
+ are you allowed to cd in that directory? Yes. 
+Can you "ls" it?  Yes.
+Can you "ls -l" it? Yes.
+Can you create files under it? No,Permission denied.
+
+5&6
+mkdir myDir2 myDir3
+touch myDir2/myFile.txt
+mv myDir2/myFile.txt myDir3/
+
+7. 
+total        used        free      shared  buff/cache   available
+Mem:          71367       32400       19779        3585       19187       33923
+Swap:          4119           0        4119
+
+71367MiB. 
+
+9. 
+
+[chih-kuosp24@sjsu a1]$ cat /etc/os-release
+NAME="Red Hat Enterprise Linux"
+VERSION="8.6 (Ootpa)"
+ID="rhel"
+ID_LIKE="fedora"
+VERSION_ID="8.6"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="Red Hat Enterprise Linux 8.6 (Ootpa)"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:redhat:enterprise_linux:8::baseos"
+HOME_URL="https://www.redhat.com/"
+DOCUMENTATION_URL="https://access.redhat.com/documentation/red_hat_enterprise_linux/8/"
+BUG_REPORT_URL="https://bugzilla.redhat.com/"
+
+REDHAT_BUGZILLA_PRODUCT="Red Hat Enterprise Linux 8"
+REDHAT_BUGZILLA_PRODUCT_VERSION=8.6
+REDHAT_SUPPORT_PRODUCT="Red Hat Enterprise Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="8.6"
+
+
+Red Hat Enterprise Linux"
+VERSION="8.6 (Ootpa) 
+os-release  contains the information.
+
+10.
+[chih-kuosp24@sjsu a1]$ ls -l /etc/os-release
+lrwxrwxrwx. 
+1 root root 22 Apr  6  2022 /etc/os-release -> ..//usr/lib/os-release
+lrwxrwxrwx. This means the link is readable, writable, and executable by everyone. However, the actual access permissions depend on the target file /usr/lib/os-release that this symlink points to."
+

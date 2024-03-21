@@ -1,0 +1,34 @@
+I closed a terminal after question 4 so I lost some commands hitory in cmds.log.
+
+I found the completed hitory in cat ~/.bash_history.
+
+
+cd cs131
+mkdir a2
+cd a2
+touch a2.txt
+find /etc -type f > one.txt 2> two.txt
+cat one.txt
+cat two.txt
+wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+head -10 Global YouTube Statistics.csv
+cat Global YouTube Statistics.csv
+ls
+head -10 'Global YouTube Statistics.csv'
+cut -d, -f20,21 'Global YouTube Statistics.csv' | tail -n +2 | sort | uniq -c | sort -nr | head -3
+ps -u $(whoami)
+ps -u $(chih-kuosp24@sjsu)
+[chih-kuosp24@sjsu a2]$ ps -u $(chih-kuosp24@sjsu)
+-bash: chih-kuosp24@sjsu: command not found
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+chih-ku+ 4004303  0.0  0.0  19584  7232 pts/4    Ss   22:25   0:00 -bash
+chih-ku+ 4020270  0.0  0.0  24960  7872 pts/4    R+   23:
+clear
+vi file.txt
+188  ps -u $(chih-kuosp24@sjsu)
+  189  pidof systemd
+  190  nano a2.txt
+  191  cat a2.txt
+  192  nano a2.txt
+  193  cmds.log
+  194  history > cmds.log

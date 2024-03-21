@@ -1,0 +1,64 @@
+1.
+a. Purpose of the command:
+This command searches for all files within the /etc directory, outputting 
+the results to one.txt and any errors to two.txt. It aims to list system 
+configuration files while capturing access errors.
+
+b. Observations from one.txt and two.txt:
+one.txt: Shows paths to files in /etc, indicating accessible system 
+configuration files.
+two.txt: Contains error messages, typically due to permission issues,
+ highlighting files/directories that couldn't be accessed.
+
+2.
+[chih-kuosp24@sjsu a2]$ cut -d, -f20,21 'Global YouTube Statistics.csv' | tail -n +2 | sort | uniq -c | sort -nr | head -3
+     15 2006,Mar
+     13 2014,Jul
+     12 2014,Aug
+
+cut -d, -f20,21 'Global YouTube Statistics.csv': Grabs the columns for 
+creation year and month.
+tail -n +2: Omits the CSV header.
+sort: Arranges [Year, Month] pairs for tallying.
+uniq -c: Tallys each [Year, Month] pair.
+sort -nr: Ranks pairs by frequency, highest first.
+head -3: Picks the top three pairs.
+
+
+3.
+
+[chih-kuosp24@sjsu a2]$ ps -u $(chih-kuosp24@sjsu)
+-bash:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+chih-ku+ 4004303  0.0  0.0  19584  7232 pts/4    Ss   22:25   0:00 -bash
+chih-ku+ 4020270  0.0  0.0  24960  7872 pts/4    R+   23:10   0:00 ps -u
+
+4.
+b. I have a new process after the first terminal executing commnad vim file.txt
+
+chih-ku+ 4021356  0.0  0.0  24960  7872 pts/17   R+   23:14   0:00 ps -u
+
+PID: 4021356
+
+d.
+After exiting vi in the first terminal and listing the processes again in the 
+second terminal, I noticed that the process associated with vi file.txt
+was no longer present in the process list. This change
+occurred because closing the vi editor terminated its process.
+
+5.
+The init process in Linux is the first process that gets started by the kernel 
+during the system's boot-up. It is the parent of all other processes and is 
+responsible for starting system services and daemons according to the scripts 
+and configuration files in the system.
+
+commnad:pidof systemd
+
+6.
+The ps aux command in Linux displays a comprehensive list of all running 
+processes. It shows details like the user owning the process, CPU and memory 
+usage, process ID, and the command that initiated the process. 
+The a option includes processes from all users, u adds a user-oriented format, 
+and x includes processes without a controlling terminal.
+
+

@@ -1,0 +1,622 @@
+Script started on 2024-04-08 20:24:39-04:00
+bash-4.4$  touch ~/.bash_profile
+bash-4.4$  nano ~/.bash_profile
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;33H(B[0;7m[ Reading File ](B[m[22;39H(B[0;7m 0 lines	(B[m[H(B[0;7m      /mnt/scratch/SP24_CS131_Jyotika/chih-kuosp24/.bash_profile [14b [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[3d[39;49m(B[m[?12l[?25h[?25l[1;71H(B[0;7mModified(B[m[3dalias l='ls -ltr'[4d[?12l[?25h[?25lalias w='ls -l | wc'[22d[K[5d[?12l[?25h[?25l[23;14H [6b(B[0;7mM-D(B[m DOS Format      (B[0;7mM-A(B[m Append [9b(B[0;7mM-B(B[m Backup File[24;2H(B[0;7mC(B[m Cancel [10b(B[0;7mM-M(B[m Mac Format      (B[0;7mM-P(B[m Prepend [8b(B[0;7m^T(B[m To Files[K[22d(B[0;7mFile Name to Write: /mnt/scratch/SP24_CS131_Jyotika/chih-kuosp24/.bash_profile  [22;1H(B[m[79G[?12l[?25h[?25l[K[1;79H[1;71H(B[0;7m [7b(B[m[22;32H(B[0;7m[ Wrote 3 lines ](B[m[23;14H(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24;2H(B[0;7mX(B[m Exit      (B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[5d[?12l[?25h[?25l[22d[J[24;80H[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>bash-4.4$ source ~/.bash_profile
+bash-4.4$ l
+total 8
+drwxrwxr-x 2 chih-kuosp24 chih-kuosp24 4096 Feb  5 04:01 12
+drwxrwxr-x 8 chih-kuosp24 chih-kuosp24 4096 Mar 24 20:07 cs131
+-rw-rw-r-- 1 chih-kuosp24 chih-kuosp24    0 Apr  8 20:24 ws4.txt
+bash-4.4$ w
+      4      29     196
+bash-4.4$ ls
+12  cs131  ws4.txt
+bash-4.4$ cd cs131
+bash-4.4$ touch [K[K[K[K[K[Kt[Kls
+a1  a2	w1  ws2  ws3
+bash-4.4$ touch ws4
+bash-4.4$ ls
+a1  a2	w1  ws2  ws3  ws4
+bash-4.4$ cd ws4
+bash: cd: ws4: Not a directory
+bash-4.4$ rm s[Kws4
+bash-4.4$ mkdir ws4
+bash-4.4$ cd ws4
+bash-4.4$ ls
+bash-4.4$ wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main//Global%20YouTube%20Statistics.csv
+--2024-04-08 20:31:12--  https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.111.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 200279 (196K) [text/plain]
+Saving to: 'Global YouTube Statistics.csv'
+
+          Global Yo   0%[                    ]       0  --.-KB/s               Global YouTube Stat 100%[===================>] 195.58K  --.-KB/s    in 0.009s  
+
+2024-04-08 20:31:13 (21.8 MB/s) - 'Global YouTube Statistics.csv' saved [200279/200279]
+
+bash-4.4$ cat[K[K[Keh[K[Khead -30 'Global YouTube Statistics.csv'
+rank,Youtuber,subscribers,video views,category,Title,uploads,Country,Abbreviation,channel_type,video_views_rank,country_rank,channel_type_rank,video_views_for_the_last_30_days,lowest_monthly_earnings,highest_monthly_earnings,lowest_yearly_earnings,highest_yearly_earnings,subscribers_for_last_30_days,created_year,created_month,created_date,Gross tertiary education enrollment (%),Population,Unemployment rate,Urban_population,Latitude,Longitude
+1,T-Series,245000000,2.28E+11,Music,T-Series,20082,India,IN,Music,1,1,1,2258000000,564600,9000000,6800000,108400000,2000000,2006,Mar,13,28.1,1366417754,5.36,471031528,20.593684,78.96288
+2,YouTube Movies,170000000,0,Film & Animation,youtubemovies,1,United States,US,Games,4055159,7670,7423,12,0,0.05,0.04,0.58,nan,2006,Mar,5,88.2,328239523,14.7,270663028,37.09024,-95.712891
+3,MrBeast,166000000,28368841870,Entertainment,MrBeast,741,United States,US,Entertainment,48,1,1,1348000000,337000,5400000,4000000,64700000,8000000,2012,Feb,20,88.2,328239523,14.7,270663028,37.09024,-95.712891
+4,Cocomelon - Nursery Rhymes,162000000,1.64E+11,Education,Cocomelon - Nursery Rhymes,966,United States,US,Education,2,2,1,1975000000,493800,7900000,5900000,94800000,1000000,2006,Sep,1,88.2,328239523,14.7,270663028,37.09024,-95.712891
+5,SET India,159000000,1.48E+11,Shows,SET India,116536,India,IN,Entertainment,3,2,2,1824000000,455900,7300000,5500000,87500000,1000000,2006,Sep,20,28.1,1366417754,5.36,471031528,20.593684,78.96288
+6,Music,119000000,0,nan,Music,0,nan,nan,Music,4057944,nan,nan,nan,0,0,0,0,nan,2013,Sep,24,nan,nan,nan,nan,nan,nan
+7,ýýý Kids Diana Show,112000000,93247040539,People & Blogs,ýýý Kids Diana Show,1111,United States,US,Entertainment,5,3,3,731674000,182900,2900000,2200000,35100000,nan,2015,May,12,88.2,328239523,14.7,270663028,37.09024,-95.712891
+8,PewDiePie,111000000,29058044447,Gaming,PewDiePie,4716,Japan,JP,Entertainment,44,1,4,39184000,9800,156700,117600,1900000,nan,2010,Apr,29,63.2,126226568,2.29,115782416,36.204824,138.252924
+9,Like Nastya,106000000,90479060027,People & Blogs,Like Nastya Vlog,493,Russia,RU,People,630,5,25,48947000,12200,195800,146800,2300000,100000,2016,Jan,14,81.9,144373535,4.59,107683889,61.52401,105.318756
+10,Vlad and Niki,98900000,77180169894,Entertainment,Vlad and Niki,574,United States,US,Entertainment,8,5,6,580574000,145100,2300000,1700000,27900000,600000,2018,Apr,23,88.2,328239523,14.7,270663028,37.09024,-95.712891
+11,Zee Music Company,96700000,57856289381,Music,Zee Music Company,8548,India,IN,Music,12,3,2,803613000,200900,3200000,2400000,38600000,1100000,2014,Mar,12,28.1,1366417754,5.36,471031528,20.593684,78.96288
+12,WWE,96000000,77428473662,Sports,WWE,70127,United States,US,Sports,7,6,1,714614000,178700,2900000,2100000,34300000,600000,2007,May,11,88.2,328239523,14.7,270663028,37.09024,-95.712891
+13,Gaming,93600000,0,nan,Gaming,0,nan,nan,Games,4057944,nan,1,nan,0,0,0,0,nan,2013,Dec,15,nan,nan,nan,nan,nan,nan
+14,BLACKPINK,89800000,32144597566,People & Blogs,BLACKPINK,543,South Korea,KR,Music,32,1,3,498930000,124700,2000000,1500000,23900000,700000,2016,Jun,29,94.3,51709098,4.15,42106719,35.907757,127.766922
+15,Goldmines,86900000,24118230580,Film & Animation,goldmines,1,nan,nan,Music,4056562,nan,5663,18,0,0.07,0.05,0.86,nan,2006,Aug,15,nan,nan,nan,nan,nan,nan
+16,Sony SAB,83000000,1.01E+11,Shows,Sony SAB,71270,India,IN,Entertainment,4,5,7,1657000000,414300,6600000,5000000,79600000,1100000,2007,Aug,4,28.1,1366417754,5.36,471031528,20.593684,78.96288
+17,5-Minute Crafts,80100000,26236790209,Howto & Style,5-Minute Crafts 2.0,1,United Kingdom,GB,Entertainment,4057901,4797,6781,1,0,0,0,0.05,nan,2020,Jul,27,60,66834405,3.85,55908316,55.378051,-3.435973
+18,BANGTANTV,75600000,20826993957,Music,BANGTANTV,2281,South Korea,KR,Music,112,2,4,168290000,42100,673200,504900,8100000,400000,2012,Dec,17,94.3,51709098,4.15,42106719,35.907757,127.766922
+19,Sports,75000000,0,nan,sports,3,United States,US,Entertainment,3898122,6266,5395,16,0,0.06,0.05,0.77,nan,2006,Jan,30,88.2,328239523,14.7,270663028,37.09024,-95.712891
+20,Justin Bieber,71600000,30608119724,Music,Justin Bieber,249,Canada,CA,Music,38,1,6,176326000,44100,705300,529000,8500000,100000,2007,Jan,15,68.9,36991981,5.56,30628482,56.130366,-106.346771
+21,HYBE LABELS,71300000,28634566938,Music,HYBE LABELS,1337,South Korea,KR,Music,46,3,5,598173000,149500,2400000,1800000,28700000,900000,2008,Jun,4,94.3,51709098,4.15,42106719,35.907757,127.766922
+22,Zee TV,70500000,73139054467,Entertainment,Zee TV,129204,India,IN,Entertainment,9,6,8,1707000000,426800,6800000,5100000,81900000,900000,2005,Dec,11,28.1,1366417754,5.36,471031528,20.593684,78.96288
+23,Pinkfong Baby Shark - Kids' Songs & Stories,68200000,38843229963,Education,Pinkfong Baby Shark - Kids' Songs & Stories,2865,United States,US,Education,23,8,2,473387000,118300,1900000,1400000,22700000,600000,2011,Dec,14,88.2,328239523,14.7,270663028,37.09024,-95.712891
+24,Canal KondZilla,66500000,36775585925,Music,Canal KondZilla,2572,Brazil,BR,Music,25,1,7,447223000,0,0,0,0,nan,2012,Mar,21,51.3,212559417,12.08,183241641,-14.235004,-51.92528
+25,ChuChu TV Nursery Rhymes & Kids Songs,65900000,45757850229,Education,ChuChu TV Nursery Rhymes & Kids Songs,633,India,IN,Education,18,7,3,420292000,105100,1700000,1300000,20200000,500000,2013,Feb,9,28.1,1366417754,5.36,471031528,20.593684,78.96288
+26,Shemaroo Filmi Gaane,65600000,28648024439,Music,Shemaroo Filmi Gaane,8502,India,IN,Music,47,8,8,254961000,63700,1000000,764900,12200000,400000,2010,Jun,11,28.1,1366417754,5.36,471031528,20.593684,78.96288
+27,Colors TV,64600000,61510906457,Shows,Colors TV,112915,India,IN,Entertainment,10,9,9,1188000000,296900,4800000,3600000,57000000,1100000,2008,Jun,13,28.1,1366417754,5.36,471031528,20.593684,78.96288
+28,T-Series Bhakti Sagar,61000000,29533230328,Music,T- SERIES BHAKTI SAGAR,13,India,IN,Music,4053938,5803,5744,10,0,0.04,0.03,0.48,nan,2018,Aug,3,28.1,1366417754,5.36,471031528,20.593684,78.96288
+29,Dude Perfect,59500000,16241549158,Sports,Dude Perfect,389,United States,US,Sports,182,9,3,141200000,35300,564800,423600,6800000,100000,2009,Mar,17,88.2,328239523,14.7,270663028,37.09024,-95.712891
+bash-4.4$ ls
+'Global YouTube Statistics.csv'
+bash-4.4$ mkdir Subscribers
+bash-4.4$ grep "United States" 'Global YouTube Statistics.csv' | cut -d',' -f3 >  Worksheet4/Subscribers/United_States.txt
+bash: Worksheet4/Subscribers/United_States.txt: No such file or directory
+bash-4.4$ s[Kgrep "United States" 'Global YouTube Statistics.csv' | cut -d',' -f3 >  Worksheet4/Subscribers/United_States.txt
+bash: Worksheet4/Subscribers/United_States.txt: No such file or directory
+bash-4.4$ grep "United States" 'Global YouTube Statistics.csv' | cut -d',' -f3 >  w4/Subscribers/United_States.txt
+bash: w4/Subscribers/United_States.txt: No such file or directory
+bash-4.4$ grep "United States" 'Global YouTube Statistics.csv' | cut -d',' -f3 >  w4/Subscribers/United_States.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[Cs4/Subscribers/United_States.txt[C[C[C
+bash: ws4/Subscribers/United_States.txt: No such file or directory
+bash-4.4$ ls
+'Global YouTube Statistics.csv'   Subscribers
+bash-4.4$ grep "United States" 'Global YouTube Statistics.csv' | cut -d',' -f3 >  w4/Subscribers/United_States.txt[1P/Subscribers/United_States.txt[C[C[1P/Subscribers/United_States.txt[C
+bash: /Subscribers/United_States.txt: No such file or directory
+bash-4.4$ grep "United States" 'Global YouTube Statistics.csv' | cut -d',' -f3 >  w4/Subscribers/United_States.txt[1PSubscribers/United_States.txt[C[C[C[1PSubscribers/United_States.txt[C[C[1PSubscribers/United_States.txt[C
+bash-4.4$ grep "India" 'Global YouTube Statistics.csv' | cut -d',' -f3 > Worksheeet4/Subscribers/India.txt
+bash: Worksheet4/Subscribers/India.txt: No such file or directory
+bash-4.4$ grep "India" 'Global YouTube Statistics.csv' | cut -d',' -f3 > Subscribbers/India.txt
+bash-4.4$ c[Kls
+'Global YouTube Statistics.csv'   Subscribers
+bash-4.4$ cd Subscribers
+bash-4.4$ ls
+India.txt  United_States.txt
+bash-4.4$ cat India.txt
+245000000
+159000000
+96700000
+83000000
+70500000
+65900000
+65600000
+64600000
+61000000
+59300000
+58000000
+57600000
+57200000
+54600000
+53300000
+47400000
+46600000
+45500000
+42500000
+41400000
+39200000
+38300000
+38200000
+37200000
+37000000
+36600000
+35500000
+35500000
+35400000
+34300000
+34000000
+33500000
+33500000
+33400000
+32700000
+32000000
+31700000
+31700000
+30700000
+30500000
+29800000
+28900000
+28500000
+28400000
+28300000
+28200000
+27300000
+27100000
+26400000
+26300000
+25200000
+24300000
+24200000
+23400000
+23100000
+23100000
+23000000
+23000000
+22900000
+22600000
+22600000
+22500000
+21800000
+21600000
+21400000
+21300000
+21300000
+21300000
+20900000
+20400000
+20400000
+20200000
+20000000
+19500000
+19400000
+19400000
+19300000
+19200000
+19100000
+19000000
+18800000
+18600000
+17800000
+17700000
+17500000
+17500000
+17500000
+17300000
+17300000
+17000000
+16900000
+16900000
+16600000
+16600000
+16600000
+16500000
+16300000
+16000000
+15800000
+15800000
+15700000
+15700000
+15700000
+15700000
+15700000
+15500000
+15500000
+15400000
+15300000
+15300000
+15200000
+15200000
+15200000
+15200000
+15200000
+15200000
+15000000
+15000000
+15000000
+15000000
+15000000
+14700000
+14700000
+14600000
+14500000
+14500000
+14500000
+14400000
+14400000
+14400000
+14400000
+14200000
+14200000
+14200000
+14100000
+14000000
+14000000
+13900000
+13800000
+13800000
+13700000
+13700000
+13700000
+13700000
+13700000
+13600000
+13500000
+13500000
+13500000
+13400000
+13400000
+13400000
+13300000
+13300000
+13200000
+13200000
+13200000
+13100000
+13000000
+12800000
+12800000
+12700000
+12500000
+12500000
+12500000
+12500000
+12500000
+12500000
+12500000
+12400000
+12400000
+12400000
+12400000
+12300000
+12300000
+bash-4.4$ cd ..
+bash-4.4$ ls
+'Global YouTube Statistics.csv'   Subscribers
+bash-4.4$ echo "United States:" $(awk '{sum += $1; count++} END {print sum/count}}' Worksheet4/Subscribers/United_States.txt) > ws4_means.txt
+awk: fatal: cannot open file `Worksheet4/Subscribers/United_States.txt' for reading (No such file or directory)
+bash-4.4$ echo "United States:" $(awk '{sum += $1; count++} END {print sum/count}}' Subscribers/United_States.txt) > ws4_means.txt
+bash-4.4$ echo "India:" $(awk '{sum += $1; count++} END {print sum/count}' Subscrribers/India.txt) >> ws4_means.txt
+bash-4.4$ cat ws4_means.txt
+United States: 2.34169e+07
+India: 25596000
+bash-4.4$ cd Subscribers
+bash-4.4$ cat [K[K[K[Kls
+India.txt  United_States.txt
+bash-4.4$ cat United_States.txt
+170000000
+166000000
+162000000
+112000000
+98900000
+96000000
+75000000
+68200000
+59500000
+59500000
+56900000
+56400000
+52900000
+52700000
+52200000
+47900000
+46600000
+44200000
+42400000
+42400000
+40900000
+39200000
+38600000
+38200000
+38200000
+38000000
+37900000
+37600000
+36700000
+36600000
+36300000
+35200000
+35200000
+34900000
+33700000
+33600000
+32800000
+32700000
+31700000
+31700000
+31600000
+31600000
+31200000
+30700000
+30700000
+30400000
+30400000
+30300000
+30200000
+30100000
+29600000
+29200000
+28400000
+28200000
+27500000
+27500000
+27400000
+27300000
+27000000
+26700000
+26700000
+26500000
+26400000
+26200000
+26100000
+26000000
+25700000
+25700000
+25600000
+25500000
+25400000
+25200000
+25100000
+24800000
+24700000
+24600000
+24600000
+24400000
+24100000
+24100000
+24100000
+24000000
+23900000
+23900000
+23900000
+23800000
+23800000
+23700000
+23700000
+23600000
+23600000
+23300000
+23200000
+23200000
+23100000
+23100000
+22900000
+22700000
+22600000
+22600000
+22600000
+22500000
+22500000
+22300000
+22200000
+22000000
+22000000
+21900000
+21900000
+21900000
+21800000
+21800000
+21600000
+21500000
+21300000
+21300000
+21300000
+21100000
+21000000
+21000000
+21000000
+20900000
+20900000
+20900000
+20700000
+20700000
+20700000
+20500000
+20400000
+20200000
+20100000
+20100000
+20100000
+20100000
+20100000
+20100000
+20100000
+20000000
+20000000
+19800000
+19800000
+19700000
+19700000
+19600000
+19600000
+19600000
+19600000
+19200000
+19100000
+19100000
+19000000
+18800000
+18800000
+18600000
+18400000
+18400000
+18300000
+18300000
+18100000
+18100000
+18000000
+18000000
+18000000
+17900000
+17900000
+17900000
+17900000
+17900000
+17900000
+17800000
+17700000
+17500000
+17400000
+17300000
+17200000
+17100000
+17000000
+16900000
+16900000
+16900000
+16900000
+16700000
+16700000
+16700000
+16600000
+16500000
+16500000
+16500000
+16400000
+16400000
+16300000
+16300000
+16300000
+16300000
+16300000
+16200000
+16200000
+16200000
+16100000
+16100000
+16100000
+15900000
+15900000
+15900000
+15800000
+15700000
+15600000
+15500000
+15500000
+15400000
+15400000
+15400000
+15300000
+15200000
+15100000
+15100000
+15100000
+15000000
+15000000
+15000000
+15000000
+15000000
+14900000
+14900000
+14900000
+14800000
+14800000
+14800000
+14800000
+14800000
+14800000
+14700000
+14700000
+14700000
+14700000
+14700000
+14700000
+14600000
+14600000
+14600000
+14600000
+14500000
+14500000
+14500000
+14500000
+14500000
+14500000
+14400000
+14400000
+14400000
+14400000
+14400000
+14400000
+14300000
+14300000
+14200000
+14100000
+14100000
+14000000
+13900000
+13900000
+13900000
+13900000
+13900000
+13800000
+13600000
+13600000
+13600000
+13500000
+13500000
+13400000
+13400000
+13400000
+13400000
+13400000
+13300000
+13300000
+13300000
+13300000
+13300000
+13300000
+13300000
+13200000
+13200000
+13200000
+13100000
+13100000
+13100000
+13100000
+13000000
+13000000
+12900000
+12900000
+12900000
+12800000
+12800000
+12700000
+12700000
+12700000
+12700000
+12700000
+12600000
+12600000
+12500000
+12500000
+12500000
+12500000
+12400000
+12400000
+12400000
+12400000
+12400000
+12400000
+bash-4.4$ clear
+[3J[H[2Jbash-4.4$ cd ..
+bash-4.4$ ls
+'Global YouTube Statistics.csv'   Subscribers   ws4_means.txt
+bash-4.4$ cat ws4)means[K[K[K[K[K[K_means.txt
+United States: 2.34169e+07
+India: 25596000
+bash-4.4$ ls
+'Global YouTube Statistics.csv'   Subscribers   ws4_means.txt
+bash-4.4$ t[Kt[Ktouch greetings.txt
+bash-4.4$ nano greetings.txt
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;33H(B[0;7m[ Reading File ](B[m[22;39H(B[0;7m 0 lines	(B[m[H(B[0;7m  GNU nano 2.9.8 [19bgreetings.txt [29b [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[3d[39;49m(B[m[?12l[?25h[?25l[1;71H(B[0;7mModified(B[m[3decho "Hello, John Doe![4dHi, Jane Doe![5dGreetings, John Smith![6dHello, Michael Johnson![7dHi, Emily Davis!" > greetings.txt[22d[K[8d[?12l[?25h[?25l[23;14H [6b(B[0;7mM-D(B[m DOS Format      (B[0;7mM-A(B[m Append [9b(B[0;7mM-B(B[m Backup File[24;2H(B[0;7mC(B[m Cancel [10b(B[0;7mM-M(B[m Mac Format      (B[0;7mM-P(B[m Prepend [8b(B[0;7m^T(B[m To Files[K[22d(B[0;7mFile Name to Write: greetings.txt [45b [22;1H(B[m[22;34H[?12l[?25h[?25l[K[1;79H[1;71H(B[0;7m [7b(B[m[22;32H(B[0;7m[ Wrote 6 lines ](B[m[23;14H(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24;2H(B[0;7mX(B[m Exit      (B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[8d[?12l[?25h[?25l[22d[J[24;80H[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>bash-4.4$ sed -i 's/Hello/Hi/g' greetings.txt
+bash-4.4$ sed -i '/Doe/d' greetings.txt
+bash-4.4$ sed -i 's/$/ (edited)/' greetings.txt
+bash-4.4$ sed -i '/^Hello,/s/Michael Johnson/Mike Johnson/' greetings.txt
+bash-4.4$ cat greetings.txt
+Greetings, John Smith! (edited)
+Hi, Michael Johnson! (edited)
+Hi, Emily Davis!" > greetings.txt (edited)
+ (edited)
+bash-4.4$ ls
+'Global YouTube Statistics.csv'   Subscribers   greetings.txt   ws4_means.txt
+bash-4.4$ rm 'Global YouTube Statistics.csv'
+bash-4.4$ exit
+
+Script done on 2024-04-08 20:43:43-04:00

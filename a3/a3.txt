@@ -1,0 +1,198 @@
+Q1:
+wc -l last.fake
+507
+
+grep 'sp24' last.fake > lastsp24.fake
+ wc -l lastsp24.fake
+478
+
+
+Q2:
+grep 'Sun' lastsp24.fake >> a3.txt 
+
+
+breannasp24 pts/1                         Sun Apr  7 23:57 - 00:02  (00:04)
+breannasp24 pts/10       172.29.96.95     Sun Apr  7 23:13 - 02:10  (02:57)
+breannasp24 pts/10       172.29.96.95     Sun Apr  7 23:06 - 23:12  (00:06)
+swansp24 pts/8        172.29.96.96     Sun Apr  7 22:15 - 00:21  (02:06)
+breannasp24 pts/4        172.29.96.94     Sun Apr  7 21:18 - 23:51  (02:32)
+michellesp24 pts/4        172.29.96.94     Sun Apr  7 20:58 - 21:16  (00:17)
+billysp24 pts/4                         Sun Apr  7 19:19 - 20:12  (00:52)
+billysp24 pts/1        172.29.96.92     Sun Apr  7 18:00 - 23:57  (05:56)
+gavinsp24 pts/1        172.29.96.18     Sun Mar 31 01:04 - 02:54  (01:49)
+chih-kuosp24 pts/8        172.29.97.242    Sun Mar 24 20:07 - 22:52  (02:45)
+megansp24 pts/4        172.29.97.240    Sun Mar 24 19:48 - 22:17  (02:28)
+fnusp24  pts/2                         Sun Mar 24 19:32 - 20:20  (00:48)
+fnusp24  pts/1        172.29.97.239    Sun Mar 24 19:32 - 23:23  (03:51)
+fnusp24  pts/1        172.29.97.239    Sun Mar 24 19:31 - 19:31  (00:00)
+fnusp24  pts/2                         Sun Mar 24 19:27 - 19:32  (00:04)
+fnusp24  pts/1        172.29.97.239    Sun Mar 24 19:26 - 19:31  (00:04)
+fnusp24  pts/2                         Sun Mar 24 18:58 - 19:26  (00:28)
+fnusp24  pts/1        172.29.97.239    Sun Mar 24 18:55 - 19:26  (00:30)
+akashsp24 pts/2                         Sun Mar 24 14:47 - 14:51  (00:03)
+akashsp24 pts/1        172.29.97.242    Sun Mar 24 14:46 - 16:52  (02:06)
+briansp24 pts/1        172.29.97.238    Sun Mar 24 12:10 - 13:02  (00:51)
+briansp24 pts/1        172.29.97.238    Sun Mar 24 11:26 - 12:10  (00:44)
+megansp24 pts/8        172.29.97.249    Sun Mar 24 01:03 - 01:25  (00:22)
+xuebosp24 pts/4        172.29.97.248    Sun Mar 24 00:56 - 01:10  (00:13)
+aayushsp24 pts/2        172.29.97.246    Sun Mar 24 00:16 - 03:10  (02:54)
+
+
+[chih-kuosp24@sjsu a3]$ grep 'Sun' lastsp24.fake > sundayLogins.fake
+[chih-kuosp24@sjsu a3]$ grep 'Sun' lastsp24.fake >> a3.txt
+[chih-kuosp24@sjsu a3]$ nano a3.txt
+[chih-kuosp24@sjsu a3]$ awk '{print $1}' sundayLogins.fake >> a3.txt
+[chih-kuosp24@sjsu a3]$ nano a3.txt
+[chih-kuosp24@sjsu a3]$ awk '{print $1}' sundayLogins.fake > sundayUsernames.fake
+[chih-kuosp24@sjsu a3]$ sort sundayUsernames.fake | uniq > uniqueSundayUsers.fake
+[chih-kuosp24@sjsu a3]$ nano a3.txt
+[chih-kuosp24@sjsu a3]$ awk '{print $1}' sundayLogins.fake | sort | uniq > uniqueSundayUsers.txt
+[chih-kuosp24@sjsu a3]$ awk 'BEGIN {print "The list of people who worked on Sunday are:"} 
+>      {print} 
+>      END {print "Kudos to these people for putting in the work"}' uniqueSundayUsers.txt
+The list of people who worked on Sunday are:
+aayushsp24
+akashsp24
+billysp24
+breannasp24
+briansp24
+chih-kuosp24
+fnusp24
+gavinsp24
+megansp24
+michellesp24
+swansp24
+xuebosp24
+Kudos to these people for putting in the work
+
+
+Q3:
+
+[chih-kuosp24@sjsu a3]$ awk '{if ($4 >= "23:00" || $4 <= "04:00") print $1}' lastsp24.fake > nightOwls.temp
+[chih-kuosp24@sjsu a3]$ sort nightOwls.temp | uniq > nightOwls.txt
+[chih-kuosp24@sjsu a3]$ awk 'BEGIN {print "Night Owls List:"} {print} END {print "Night Owls are dope. Please ensure you get enough sleep though."}' nightOwls.txt
+Night Owls List:
+aarushisp24
+aayushsp24
+acesp24
+ajaysp24
+akashsp24
+albertsp24
+alexsp24
+amansp24
+athishsp24
+atishaysp24
+ayesp24
+benjaminsp24
+bennysp24
+billysp24
+brandonsp24
+breannasp24
+briansp24
+chih-kuosp24
+connersp24
+daosp24
+davidsp24
+diyasp24
+dylansp24
+edisonsp24
+ericsp24
+farihasp24
+fnusp24
+gavinsp24
+georgesp24
+gradysp24
+gursimransp24
+hardiksp24
+jadonsp24
+jaydevsp24
+jessesp24
+jimmysp24
+jonathansp24
+justinsp24
+kevinsp24
+khushisp24
+kobesp24
+madhavsp24
+manassp24
+matthewsp24
+maysp24
+megansp24
+michellesp24
+nhatsp24
+nicholsonsp24
+nicolesp24
+piercesp24
+pratiksp24
+rickysp24
+robertosp24
+robertsp24
+ronsp24
+sandrasp24
+sangsp24
+sheelsp24
+sunidhisp24
+swansp24
+taliasp24
+tanishasp24
+tylermsp24
+tylersp24
+vaikuntamsp24
+xiaokesp24
+xuebosp24
+yelinsp24
+zakisp24
+Night Owls are dope. Please ensure you get enough sleep though.
+
+
+Q4:
+
+[chih-kuosp24@sjsu a3]$ awk '{if ($8 >= "05:00" && $8 <= "09:00") print $1}' lastsp24.fake > earlyBirds.temp
+[chih-kuosp24@sjsu a3]$ cat earlyBirds.temp
+ericsp24
+ajaysp24
+[chih-kuosp24@sjsu a3]$ sort earlyBirds.temp | uniq > earlyBirds.txt
+[chih-kuosp24@sjsu a3]$ awk 'BEGIN {print "Early Birds List:"} {print} END {print "Early Birds are dope. Please ensure you get enough sleep though."}' earlyBirds.txt
+Early Birds List:
+ajaysp24
+ericsp24
+Early Birds are dope. Please ensure you get enough sleep though.
+[chih-kuosp24@sjsu a3]$ 
+
+Q5:
+[chih-kuosp24@sjsu a3]$ awk '{if ($1 ~ /^t/) print $1}' lastsp24.fake | sort | uniq
+taliasp24
+tanishasp24
+tylermsp24
+tylersp24
+
+Q6:
+[chih-kuosp24@sjsu a3]$ awk -F':' '$1 ~ /^a/ && $3 % 2 == 0 {print $1}' passwd.fake
+angie23fa
+areebah23fa
+apple23fa
+ajay23fa
+alan23fa
+amreenf23
+acesp24
+akashsp24
+ayesp24
+alexsp24
+aayushsp24
+ajaysp24
+ashish
+amansp24
+[chih-kuosp24@sjsu a3]$ 
+
+Q7:
+[chih-kuosp24@sjsu a3]$ sed 's/[a-zA-Z0-9 ]//g' passwd.fake | sort -u
+-::::-:/://
+-:::::///-://
+-:::::///__/-://
+-:::::/://
+::::-:///://
+:::::///://
+:::::///_/://
+:::::///__/://
+::::://://
+:::::/://

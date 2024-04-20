@@ -1,0 +1,447 @@
+    1  ls
+    2  mkdir 12
+    3  ls
+    4  cd ~/.ssh && ssh-keygen
+    5  mkdir ~/.ssh
+    6  cd ~/.ssh && ssh-keygen
+    7  cat ~/.ssh/id_rsa.pub
+    8  cd ..
+    9  cd ~
+   10  ls
+   11  mkdir cs131
+   12  ls
+   13  cd cs131
+   14  ls
+   15  clear
+   16  cd .
+   17  cd ..
+   18  git config --global user.email chih-kuo.hsu@sjsu.edu
+   19  git config --global user.name ckuo1009
+   20  cd cs131
+   21  git init
+   22  wget www.github.com
+   23  ls
+   24  cat index.html
+   25  rm index.html
+   26  ls
+   27  mkdir w1
+   28  cd w1
+   29  wget www.github.com
+   30  ls
+   31  rm index.html
+   32  history >cmds.log
+   33  cat cmds.log
+   34  git add.
+   35  git add .
+   36  git commit -m "first commit for ws1"
+   37  git status
+   38  git log
+   39  cd ..
+   40  git git remote add origin https://github.com/ckuo1009/cs131.git
+   41  git remote add origin https://github.com/ckuo1009/cs131.git
+   42  git push -u origin master
+   43  git config --global user.email chih-kuo.hsu@sjsu.edu
+   44  git config --global user.name ckuo1009
+   45  git remote add origin https://github.com/ckuo1009/cs131.git
+   46  git push -u origin master
+   47  git remote -v
+   48  git remote set-url origin git@github.com:用户名/仓库名.git
+   49  git remote set-url origin git@github.com:ckuo1009/cs131.git
+   50  git remote -v
+   51  git push -u origin master
+   52  ls
+   53  cd cs131
+   54  mkdir ws2
+   55  cd ws2
+   56  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+   57  ls
+   58  cat head -10
+   59  cat Global YouTube Statistics.csv head -10
+   60  head -20 Global YouTube Statistics.csv
+   61  ls
+   62  grep "United States" Global\ YouTube\ Statistics.csv
+   63  grep "Music" Global\ YouTube\ Statistics.csv
+   64  grep "Music" Global\ YouTube\ Statistics.csv | wc
+   65  grep "Music" Global\ YouTube\ Statistics.csv | wc > counts.txt
+   66  cat counts.txt
+   67  rm counts.txt
+   68  ls
+   69  grep "Music" Global\ YouTube\ Statistics.csv | wc > counts.txt
+   70  nano counts.txt
+   71  cat counts.txt
+   72  history > cmds.log
+   73  ls
+   74  rm Global YouTube Statistics.csv
+   75  rm Global\ YouTube\ Statistics.csv
+   76  ls
+   77  git commit -m "ws2"
+   78  git add .
+   79  git commit -m "ws2"
+   80  git push -u origin master
+   81  ls
+   82  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+   83  grep "Music" Global\ YouTube\ Statistics.csv
+   84  grep "Music" Global\ YouTube\ Statistics.csv > test.txt
+   85  wc test.txt
+   86  rm test.txt
+   87  grep "music" Global\ YouTube\ Statistics.csv > test.txt
+   88  wc test.txt
+   89  grep "United States" Global\ YouTube\ Statistics.csv > test1.txt
+   90  grep "Music" test1.txt > test2.txt
+   91  wc test2.txt
+   92  ls
+   93  rm 12
+   94  rm test.txt
+   95  rm test1.txt
+   96  rm text2.txt
+   97  rm test2.txt
+   98  cd cs131/ws2
+   99  cat counts.txt
+  100  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+  101  cat  Global\ YouTube\ Statistics.csv
+  102  clear
+  103  ls
+  104  grep "Music" Global\ YouTube\ Statistics.csv | wc > a.txt
+  105  cat a.txt
+  106  rm  Global\ YouTube\ Statistics.csv
+  107  rm a.txt
+  108  ls
+  109  rm 12
+  110  rm Global\ YouTube\ Statistics.csv
+  111  echo "hi " > /dev/tty
+  112  echo "hi"
+  113  cat dev/tty
+  114  cat tty
+  115  cat dev/tty
+  116  echo $HOME
+  117  ls -l
+  118  ps
+  119  ps -aux
+  120  clear
+  121  ps -aux | head
+  122  ps aux | grep launched
+  123  ps -afjx | head
+  124  echo $?
+  125  top
+  126  jsjs
+  127  find -type f 
+  128  find type -f -name"*.txt"
+  129  find type f -name"*.txt"
+  130  find type -f -name "*.txt"
+  131  cd cs131
+  132  ls
+  133  mkdir a1
+  134  cd cs131
+  135  mkdir a1
+  136  ls
+  137  cd a1
+  138  echo $SHELL
+  139  echo $HOME
+  140  ID
+  141  id
+  142  mkdir myDir
+  143  chmod u-w myDir
+  144  cd myDir
+  145  cd .
+  146  cd ..
+  147  ls
+  148  ls - l
+  149  ls -l
+  150  cd myDir
+  151  touch test.txt
+  152  cd ..
+  153  mkdir myDir2/myDir3
+  154  mkdir myDir2 my Dir3
+  155  touch myDir2/myFile.txt
+  156  mv myDir2/myFile.txt myDir3/
+  157  cd myDir2
+  158  ls
+  159  cd ..
+  160  mv myDir2/myFile.txt myDir3/
+  161  ls
+  162  rm Dir3
+  163  rmdir Dir3
+  164  mkdir myDir3
+  165  mv myDir2/myFile.txt myDir3/
+  166  cd myDir3
+  167  ls
+  168  cd ..
+  169  cd myDir2 
+  170  ls
+  171  cd ..
+  172  free -m
+  173  cat /etc/os-release
+  174  cat /etc/lsb-release
+  175  ls -l /etc/os-release
+  176  touch a1.txt
+  177  nano a1.txt
+  178  cat a1.txt
+  179  history > cmds.log
+  180  cat cmds.log
+  181  cd ..
+  182  git commit -m "first commit for a1"
+  183  git add .
+  184  git commit -m "first commit for a1"
+  185  git status
+  186  git log
+  187  git push -u origin master
+  188  ls
+  189  cd cs131
+  190  mkdir a2
+  191  cd a2
+  192  touch a2.txt
+  193  find /etc -type f > one.txt 2> two.txt
+  194  cat one.txt
+  195  cat two.txt
+  196  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+  197  head -10 Global YouTube Statistics.csv
+  198  cat Global YouTube Statistics.csv
+  199  ls
+  200  head -10 'Global YouTube Statistics.csv'
+  201  cut -d, -f20,21 'Global YouTube Statistics.csv' | tail -n +2 | sort | uniq -c | sort -nr | head -3
+  202  ps -u $(whoami)
+  203  ps -u $(chih-kuosp24@sjsu)
+  204  [chih-kuosp24@sjsu a2]$ ps -u $(chih-kuosp24@sjsu)
+  205  -bash: chih-kuosp24@sjsu: command not found
+  206  USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+  207  chih-ku+ 4004303  0.0  0.0  19584  7232 pts/4    Ss   22:25   0:00 -bash
+  208  chih-ku+ 4020270  0.0  0.0  24960  7872 pts/4    R+   23:
+  209  clear
+  210  vi file.txt
+  211  ps -u $(chih-kuosp24@sjsu)
+  212  pidof systemd
+  213  nano a2.txt
+  214  cat a2.txt
+  215  nano a2.txt
+  216  cmds.log
+  217  history > cmds.log
+  218  cat cmds.log
+  219  cat ~/.bash_history
+  220  nano cmds.log
+  221  clear
+  222  cat ~/.bash_history
+  223  touch cmds.txt
+  224  nano cmds.txt
+  225  cat cmds.log
+  226  nano cmds.log
+  227  nano cmds.txt
+  228  ls
+  229  mv a2.txt /cs131/a2
+  230  cd cs131
+  231  ls
+  232  mv a2.txt cs131/a2
+  233  cd .
+  234  cd ..
+  235  ls
+  236  mv a2.txt cs131/a2/
+  237  mv cmds.log cs131/a2
+  238  mv cmds.txt cs131/a2
+  239  cd cs131/a2
+  240  ls
+  241  rm 'Global YouTube Statistics.csv'
+  242  ls
+  243  git commit -m "a2"
+  244  git add .
+  245  git commit -m "a2"
+  246  git push -u origin master
+  247  cat cmds.txt
+  248  cd cs131
+  249  ls -ar
+  250  mkdir ws3
+  251  cd ws3
+  252  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+  253  ls
+  254  head -20 'Global YouTube Statistics.csv'
+  255  clear
+  256  ls
+  257  head -10 'Global YouTube Statistics.csv'
+  258  clear
+  259  ls
+  260  head -20 'Global YouTube Statistics.csv'
+  261  clar
+  262  clear
+  263  awk -F, '$8=="United States"' Global\ YouTube\ Statistics.csv | sort -t, -k16 -nr | head -1
+  264  clear
+  265  awk -F, '$8=="United States"' Global\ YouTube\ Statistics.csv | sort -t, -k16 -nr | head -1
+  266  awk -F, '$8=="United States"' Global\ YouTube\ Statistics.csv | sort -t, -k16 -nr | head -1 > ws3.txt
+  267   awk -F, '$8=="United Kingdom"' Global\ YouTube\ Statistics.csv | sort -t, -k16 -nr | head -1
+  268   awk -F, '$8=="United Kingdom"' Global\ YouTube\ Statistics.csv | sort -t, -k16 -nr | head -1 >> ws3.txt
+  269  cat ws3.txt
+  270  awk -F, '$8=="India"' Global\ YouTube\ Statistics.csv | sort -t, -k16 -nr | head -1
+  271   > ws3.txt
+  272  cat ws3.txt
+  273  ls
+  274  cat ws3.txt
+  275  rm ws3.txt
+  276  awk -F, '$8=="United States"' Global\ YouTube\ Statistics.csv | sort -t, -k16 -nr | head -1 > ws3.txt
+  277  awk -F, '$5=="Education"' Global\ YouTube\ Statistics.csv | sort -t, -k3 -nr | head -1 > ws3.txt
+  278   awk -F, '$5=="Entertainment"' Global\ YouTube\ Statistics.csv | sort -t, -k3 -nr | head -1 > ws3.txt
+  279  cat ws3.txt
+  280  clear
+  281  awk -F, '$8=="United States"' Global\ YouTube\ Statistics.csv | sort -t, -k16 -nr | head -1 > ws3.txt
+  282  awk -F, '$8=="United Kingdom"' Global\ YouTube\ Statistics.csv | sort -t, -k16 -nr | head -1
+  283  clear
+  284  awk -F, '$8=="United Kingdom"' Global\ YouTube\ Statistics.csv | sort -t, -k16 -nr | head -1 >> ws3.txt
+  285  cat ws3.txt
+  286  awk -F, '$8=="India"' Global\ YouTube\ Statistics.csv | sort -t, -k16 -nr | head -1 >> ws3.txt
+  287  nano ws3.txt
+  288  head -3 ws3.txt
+  289  awk -F, '$5=="Sports"' Global\ YouTube\ Statistics.csv | sort -t, -k3 -nr | head -1
+  290  clear
+  291  awk -F, '$5=="Sports"' Global\ YouTube\ Statistics.csv | sort -t, -k3 -nr | head -1
+  292  awk -F, '$5=="Sports"' Global\ YouTube\ Statistics.csv | sort -t, -k3 -nr | head -1 >> ws3.txt
+  293  awk -F, '$5=="Education"' Global\ YouTube\ Statistics.csv | sort -t, -k3 -nr | head -1 >> ws3.txt
+  294  awk -F, '$5=="Entertainment"' Global\ YouTube\ Statistics.csv | sort -t, -k3 -nr | head -1
+  295  awk -F, '$5=="Entertainment"' Global\ YouTube\ Statistics.csv | sort -t, -k3 -nr | head -1 >> ws3.txt
+  296  nano ws3.txt
+  297  history > cmds.log
+  298  ls
+  299  rm 'Global YouTube Statistics.csv'
+  300  ls
+  301  git add .
+  302  git commit -m "ws3"
+  303  git push -u origin master
+  304   touch ~/.bash_profile
+  305   nano ~/.bash_profile
+  306  source ~/.bash_profile
+  307  l
+  308  w
+  309  ls
+  310  cd cs131
+  311  ls
+  312  touch ws4
+  313  ls
+  314  cd ws4
+  315  rm ws4
+  316  mkdir ws4
+  317  cd ws4
+  318  ls
+  319  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+  320  head -30 'Global YouTube Statistics.csv'
+  321  ls
+  322  mkdir Subscribers
+  323  grep "United States" 'Global YouTube Statistics.csv' | cut -d',' -f3 > Worksheet4/Subscribers/United_States.txt
+  324  grep "United States" 'Global YouTube Statistics.csv' | cut -d',' -f3 > w4/Subscribers/United_States.txt
+  325  grep "United States" 'Global YouTube Statistics.csv' | cut -d',' -f3 > ws4/Subscribers/United_States.txt
+  326  ls
+  327  grep "United States" 'Global YouTube Statistics.csv' | cut -d',' -f3 > /Subscribers/United_States.txt
+  328  grep "United States" 'Global YouTube Statistics.csv' | cut -d',' -f3 > Subscribers/United_States.txt
+  329  grep "India" 'Global YouTube Statistics.csv' | cut -d',' -f3 > Worksheet4/Subscribers/India.txt
+  330  grep "India" 'Global YouTube Statistics.csv' | cut -d',' -f3 > Subscribers/India.txt
+  331  ls
+  332  cd Subscribers
+  333  ls
+  334  cat India.txt
+  335  cd ..
+  336  ls
+  337  echo "United States:" $(awk '{sum += $1; count++} END {print sum/count}' Worksheet4/Subscribers/United_States.txt) > ws4_means.txt
+  338  echo "United States:" $(awk '{sum += $1; count++} END {print sum/count}' Subscribers/United_States.txt) > ws4_means.txt
+  339  echo "India:" $(awk '{sum += $1; count++} END {print sum/count}' Subscribers/India.txt) >> ws4_means.txt
+  340  cat ws4_means.txt
+  341  cd Subscribers
+  342  ls
+  343  cat United_States.txt
+  344  clear
+  345  cd ..
+  346  ls
+  347  cat ws4_means.txt
+  348  ls
+  349  touch greetings.txt
+  350  nano greetings.txt
+  351  sed -i 's/Hello/Hi/g' greetings.txt
+  352  sed -i '/Doe/d' greetings.txt
+  353  sed -i 's/$/ (edited)/' greetings.txt
+  354  sed -i '/^Hello,/s/Michael Johnson/Mike Johnson/' greetings.txt
+  355  cat greetings.txt
+  356  ls
+  357  rm 'Global YouTube Statistics.csv'
+  358  touch ~/.bash_profile
+  359  nano ~/.bash_profile
+  360  source ~/.bash_profile
+  361  l
+  362  w
+  363  rm bash_profile
+  364  ls
+  365  rm ~/.bash_profile
+  366  script ws4.txt
+  367  ls
+  368  mv ws4.txt ~/cs131/ws4/
+  369  cd cs131/ws4
+  370  ls
+  371  cat ws4.txt
+  372  git add .
+  373  git commit -m "ws4"
+  374  git push -u origin master
+  375  clear
+  376  ls
+  377  cd cs131
+  378  ls
+  379  mkdir a3
+  380  cd a3
+  381  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/last.fake
+  382  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/passwd.fake
+  383  ls
+  384  cat last.fake
+  385  clear
+  386  touch a3.txt
+  387  wc -l last.fake > a3.txt
+  388  cat a3.txt
+  389  nano a3.txt
+  390  grep 'sp24' last.fake > lastsp24.fake
+  391  wc -l lastsp24.fake
+  392  nano a3.txt
+  393  head -10 lastsp24.fake
+  394  ls
+  395  head -30 lastsp24.fake
+  396  clear
+  397  grep 'Sun' lastsp24.fake > sundayLogins.fake
+  398  grep 'Sun' lastsp24.fake >> a3.txt
+  399  nano a3.txt
+  400  awk '{print $1}' sundayLogins.fake >> a3.txt
+  401  nano a3.txt
+  402  awk '{print $1}' sundayLogins.fake > sundayUsernames.fake
+  403  sort sundayUsernames.fake | uniq > uniqueSundayUsers.fake
+  404  nano a3.txt
+  405  awk '{print $1}' sundayLogins.fake | sort | uniq > uniqueSundayUsers.txt
+  406  awk 'BEGIN {print "The list of people who worked on Sunday are:"} 
+     {print} 
+     END {print "Kudos to these people for putting in the work"}' uniqueSundayUsers.txt
+  407  nano a3.txt
+  408  nano a3,txt
+  409  nano a3.txt
+  410  awk '{if ($4 >= "23:00" || $4 <= "04:00") print $1}' lastsp24.fake > nightOwls.temp
+  411  sort nightOwls.temp | uniq > nightOwls.txt
+  412  awk 'BEGIN {print "Night Owls List:"} {print} END {print "Night Owls are dope. Please ensure you get enough sleep though."}' nightOwls.txt
+  413  nano a3.txt
+  414  awk '{if ($4 >= "05:00" && $4 <= "09:00") print $1}' lastsp24.fake > earlyBirds.temp
+  415  sort earlyBirds.temp | uniq > earlyBirds.txt
+  416  awk 'BEGIN {print "Early Birds List:"} {print} END {print "Early Birds are dope. Please ensure you get enough sleep though."}' earlyBirds.txt
+  417  cat earlyBirds.temp
+  418  head -30 lastsp24.fake
+  419  clear
+  420  awk '{if ($4 >= "05:00" && $4 <= "09:00") print $1}' lastsp24.fake > earlyBirds.temp
+  421  cat earlyBirds.temp
+  422  cat lastsp24.fake
+  423  clear
+  424  ls
+  425  awk '{if ($8 >= "05:00" && $8 <= "09:00") print $1}' lastsp24.fake > earlyBirds.temp
+  426  cat earlyBirds.temp
+  427  sort earlyBirds.temp | uniq > earlyBirds.txt
+  428  awk 'BEGIN {print "Early Birds List:"} {print} END {print "Early Birds are dope. Please ensure you get enough sleep though."}' earlyBirds.txt
+  429  nano a3.txt
+  430  awk '$1 ~ /^t/' lastsp24.fake > usersStartingWithT.txt
+  431  awk '$1 ~ /^t/' lastsp24.fake
+  432  clear
+  433  awk '{if ($1 ~ /^t/) print $1}' lastsp24.fake | sort | uniq
+  434  nano a3.txt
+  435  LS
+  436  ls
+  437  head -20 password.fake
+  438  head -20 passwd.fake
+  439  clear
+  440  awk -F':' '$1 ~ /^a/ && $3 % 2 == 0 {print $1}' passwd.fake
+  441  nano a3.txt
+  442  sed 's/[a-zA-Z0-9 ]//g' passwd.fake | sort -u
+  443  nano a3.txt
+  444  git add .
+  445  history > cmds.log
